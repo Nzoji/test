@@ -134,91 +134,83 @@ List<Question> quizStage1 = [
 ];
 //---------------------------------------------------------------------------------SECOND QUIZ-------------------------------------------------------------------------------------------------------------------
 List<Question> quizStage2 = [
-  Question(
-      "Entre que altitudes encontramos meteoro?",
-      [Answer("180 km à 1100 km", false),
-        Answer("90 km à 100 km", false),
-        Answer("80 km à 110 km", true)
+ /*1.*/Question(
+      "A razão pela qual se vai para o espaço é porque temos...",
+      [Answer("uma missão", true),
+        Answer("uma posição orbital", false),
+        Answer("um foguetão", false)
       ],
       1, StageType.STAGE2
       ),
-  Question(
-      "Onde foi colocado o satélite ANGOSAT-1?",
-      [Answer("No espaço", true),
-        Answer("Na galáxia Charuto", false),
-        Answer("No Planeta Marte", false)
+  /*2.*/Question(
+      "Qual destes factores definem, os elementos da missão?",
+      [Answer("O objectivo", true),
+        Answer("A órbita", false),
+        Answer("O ponto orbital", false)
       ],
       1, StageType.STAGE2
       ),
-  Question(
-      "Como se chama a galáxia em que pertencemos?",
-      [Answer("Via Láctea", true),
-        Answer("Galáxia do Girassol", false),
-        Answer("Andrómeda", false)
+  /*3.*/ Question(
+      "Qual destes não são elementos de uma missão espacial?",
+      [Answer("Satélite", false),
+        Answer("Órbita", false),
+        Answer("Perigeu", true)
       ],
       1, StageType.STAGE2
       ),
-  Question(
-      "A que distância da superfície terrestre começa o espaço?",
-      [Answer("200 km", false),
-        Answer("130 km", true),
-        Answer("36.500 km", false)
+  /*4.*/Question(
+      "Que nome se dá trajectória fixa que o satélite descreve no espaço?",
+      [Answer("Geostacionária ", false),
+        Answer("Órbita", true),
+        Answer("Trajectória", false)
       ],
       1, StageType.STAGE2
       ),
-  Question(
-      "Que nome se dá aos corpos celestes irregulares de forma frágil e pequena, compostos por uma mistura de grãos não voláteis e gases congelados?",
-      [Answer("Estrelas", false),
-        Answer("Cometas", true),
-        Answer("Planetas", false)
+  /*5.*/Question(
+      "O satélite está dividido em:",
+      [Answer("Módulo da carga útil", false),
+        Answer("Módulo da plataforma", false),
+        Answer("Todas mencionadas", true)
       ],
       1, StageType.STAGE2
       ),
-  Question(
-      'Qual dos nomes mencionados não é considerado um planeta?',
-      [Answer("Vénus", false),
-        Answer("Mercúrio", false),
-        Answer("Plutão", true)
+  /*6.*/Question(
+      'Qual destas não pertence as equipas que compõem o Centro de Controle e Missão de Satélite do projecto ANGOSAT?',
+      [Answer("Equipa de Construção", true),
+        Answer("Equipa de Planeamento de vôo", false),
+        Answer("Equipa do Canal de Serviço", false)
       ],
       1, StageType.STAGE2
       ),
-  Question(
-      'Que nome se dá a um grande corpo celeste composto por gases quentes que emitem radiação electromagnética, especialmente luz, como resultado de reacções nucleares que ocorrem internamente?',
-      [Answer("Lua", false),
-        Answer("Asteroide", false),
-        Answer("Estrela", true)
+  /*7.*/Question(
+      'O objectivo, os usuários e as operações são: ',
+      [Answer("Elementos de uma missão", false),
+        Answer("Elementos que definem uma missão", true),
+        Answer("Todos mencionados", false)
       ],
       1, StageType.STAGE2
       ),
-  Question(
-      'Que nome se dá ao corpo celeste que orbita em torno do sol, que possui massa suficiente para que a sua própria gravidade se imponha às forças de atracção de outros corpos?',
-      [Answer("Terra", false),
-        Answer("Planeta", true),
-        Answer("Satélite", false)
+  /*8.*/Question(
+      'Qual destes é um dos benefício mais importantes da exploração espacial?',
+      [Answer("Os planetas", false),
+        Answer("Desenvolvimento de tecnologia de satélites", true),
+        Answer("Todos mencionados", false)
       ],
       1, StageType.STAGE2
       ),
-  Question(
-      'Que nome se dá ao conjunto de centenas de milhares de estrelas que interagem gravitacionalmente e orbitam em torno de um centro comum?',
-      [Answer("Galáxia", true),
-        Answer("Constelação", false),
-        Answer("Aurora", false)
+  /*9.*/Question(
+      'Qual destas é o acrónimo da órbita geostácionária?',
+      [Answer("GEO", true),
+        Answer("LEO", false),
+        Answer("MEO", false)
       ],
       1, StageType.STAGE2
       ),
-  Question(
-      'Que nome se dá luz produzida pela queda da matéria que existe no sistema de energia solar na atmosfera da Terra?',
-      [Answer("Estrela", false),
-        Answer("Lua", false),
-        Answer("Meteoro", true)
-      ],
-      1, StageType.STAGE2
-      ),
-  Question(
-      'O que não podemos encontrar no espaço?',
-      [Answer("Aeronave", true),
-        Answer("Veículo espacial", false),
-        Answer("Satélite", false)
+  /*10.*/Question(
+      'Complete a frase: A altitude da órbita define...',
+      [Answer("O tamanho da cobertuura do satélite", false),
+        Answer("A trajectória do satélite", false),
+        Answer("O tamanho do satélite", true)
       ],
       1, StageType.STAGE2
       ),

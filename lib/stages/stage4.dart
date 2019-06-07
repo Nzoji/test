@@ -86,7 +86,7 @@ class Card1 extends StatelessWidget {
     }
 
     buildCollapsed2() {
-      return buildImg('assets/images/cansat_angolano.jpg', 650.0);
+      return buildImg('assets/images/cansat_angolano.jpg', 550.0);
     }
 
     buildCollapsed3() {
@@ -165,7 +165,7 @@ class Card1 extends StatelessWidget {
                       return MaterialButton(
                         child: Text(exp.expanded ? "FECHAR": "ABRIR",
                                       style: Theme.of(context).textTheme.button.copyWith(
-                                          color: Colors.deepPurple
+                                          color: Colors.indigo
                                           ),
                                     ),
                         onPressed: () {
@@ -192,12 +192,12 @@ class Card2 extends StatelessWidget {
           child: Column(
             children: <Widget>[
               SizedBox(
-                height: 150.0,
+                height: 550.0,
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.blue,
                     shape: BoxShape.rectangle,
-                    image: DecorationImage(image: AssetImage('assets/images/space_imperatives.gif'), fit: BoxFit.cover),
+                    image: DecorationImage(image: AssetImage('assets/images/cansat.png'), fit: BoxFit.cover),
                     ),
                   ),
                 ),
@@ -244,12 +244,12 @@ class Card3 extends StatelessWidget {
           child: Column(
             children: <Widget>[
               SizedBox(
-                height: 150.0,
+                height: 550.0,
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.blue,
                     shape: BoxShape.rectangle,
-                    image: DecorationImage(image: AssetImage('assets/images/space_imperatives.gif'), fit: BoxFit.cover),
+                    image: DecorationImage(image: AssetImage('assets/images/hepta_sat.jpg'), fit: BoxFit.cover),
                     ),
                   ),
                 ),
@@ -296,12 +296,12 @@ class Card4 extends StatelessWidget {
           child: Column(
             children: <Widget>[
               SizedBox(
-                height: 150.0,
+                height: 550.0,
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.blue,
                     shape: BoxShape.rectangle,
-                    image: DecorationImage(image: AssetImage('assets/images/space_imperatives.gif'), fit: BoxFit.cover),
+                    image: DecorationImage(image: AssetImage('assets/images/cubesat.jpg'), fit: BoxFit.cover),
                     ),
                   ),
                 ),

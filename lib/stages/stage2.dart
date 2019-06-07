@@ -94,7 +94,7 @@ class Card1 extends StatelessWidget {
     }
 
     buildCollapsed2() {
-      return buildImg('assets/images/space_benefits.png', 300.0);
+      return buildImg('assets/images/mission_elements.png', 300.0);
     }
 
     buildCollapsed3() {
