@@ -35,102 +35,47 @@ List<Question> stageQuiz(StageType type) {
 }
 //-----------------------------------------------------------------------------FIRST QUIZ------------------------------------------------------------------------------------------------------------------------------------------------------
 List<Question> quizStage1 = [
-  Question(
-      'Quem foi o primeiro ser vivo a orbitar o planeta terra?',
-      [Answer("Yuri Gagarine", false),
-        Answer("Neil Amstrong", false),
-        Answer("Laika", true)
+  /*1.*/Question(
+      'Qual destes são resultados directos da pesquisa espacial?',
+      [Answer("Métodos modernos de purificação de água.", false),
+        Answer("Telecomunicações através de satélites.", false),
+        Answer("Todos mencionados.", true)
       ],
       1, StageType.STAGE1
       ),
-  Question(
-      "Em que ano Angola construiu a sua primeria infraestrutura para possibilitar a comunicação via satélite?",
-      [Answer("1991", false),
-        Answer("1974", true),
-        Answer("2010", false)
+  /*2.*/Question(
+      "Completa a frase: A cultura espacial é___________________.",
+      [Answer("O conhecimento adquirido sobre a exploração espacial.", false),
+        Answer("Importância da área espacial.", false),
+        Answer("Todas mencionadas", true)
       ],
       1, StageType.STAGE1
       ),
-  Question(
-      "Qual é o nome do satélite que permitiu a primeira transmissão ao vivo de imagens de televisão entre os Estados Unidos e a Europa?",
-      [Answer("Telstar 1", true),
-        Answer("Explorer 1", false),
-        Answer("Luna 1", false)
+  /*3.*/Question(
+      "Quais desses benefícios não é resultado da tecnologia de satélites na nossa vida?",
+      [Answer("Cabo de fibra óptica", true),
+        Answer("Isolamento térmico nas fardas dos bombeiros", false),
+        Answer("GPS - Sistema de Posicionamento Global.", false)
       ],
       1, StageType.STAGE1
       ),
-  Question(
-      "Em que ano e qual é o nome da primeira mulher a viajar para o espaço?",
-      [Answer("1963 – Savitskaya Minkova", false),
-        Answer("1969 - Hughes Fulford", false),
-        Answer("1963 – Valentina Vladimirovna Tereshkova", true)
+  /*4.*/Question(
+      "Completa a frase: A Semana Mundial do Espaço datada entre 4 e 10 de Outubro, foi criada pela Assembléia Geral da ONU em________.",
+      [Answer("1899 ", false),
+        Answer("1999", true),
+        Answer("1989", false)
       ],
       1, StageType.STAGE1
       ),
-  Question(
-      "Quem foi o primeiro homem a viajar para o espaço?",
-      [Answer("Laika", false),
-        Answer("Yuri Gagarine", true),
-        Answer("Neil Amstrong", false)
+  /*5.*/Question(
+      "Qual destes não é considerado imperativo do espaço?",
+      [Answer("Perspectiva do globo terrestre.", false),
+        Answer("Criação de detritos espaciais.", true),
+        Answer("Visão clara dos céus.", false)
       ],
       1, StageType.STAGE1
       ),
-  Question(
-      "Quem foi John Glenn Jr.?",
-      [Answer("Primeiro piloto americano", false),
-        Answer("Primeiro astronauta americano", true),
-        Answer("Primeiro engenheiro americano", false)
-      ],
-      1, StageType.STAGE1
-      ),
-  Question(
-      "Qual é o nome da primeira sonda a chegar a Lua?",
-      [Answer("Luna I", true),
-        Answer("Telstar I", false),
-        Answer("Vostok VI", false)
-      ],
-      1, StageType.STAGE1
-      ),
-  Question(
-      "Para quantos anos estava estimado o satélite BrasilSat A1?",
-      [Answer("17 anos", false),
-        Answer("10 anos", false),
-        Answer("8 anos", true)
-      ],
-      1, StageType.STAGE1
-      ),
-  Question(
-      "Quantos satélite foram usados na constelação que possibilitou o surgimento do GPS?",
-      [Answer("28 satélites", false),
-        Answer("21 satélites", false),
-        Answer("24 satélites", true)
-      ],
-      1, StageType.STAGE1
-      ),
-  Question(
-      "Com base na observação do quê foi criado o calendário?",
-      [Answer("Observação do sol", false),
-        Answer("Observação do mar", false),
-        Answer("Observação das estrelas", true)
-      ],
-      1, StageType.STAGE1
-      ),
-  Question(
-      "Quantos quilogramas pesava a nave Vostok 1?",
-      [Answer("4572 quilogramas", false),
-        Answer("4752 quilogramas", false),
-        Answer("4725 quilogramas", true)
-      ],
-      1, StageType.STAGE1
-      ),
-  Question(
-      "Qual é o significado do acrónimo GPS?",
-      [Answer("Global Permission for Space", false),
-        Answer("Global Placement Spy", false),
-        Answer("Global Positioning System", true)
-      ],
-      1, StageType.STAGE1
-      ),
+
 ];
 //---------------------------------------------------------------------------------SECOND QUIZ-------------------------------------------------------------------------------------------------------------------
 List<Question> quizStage2 = [

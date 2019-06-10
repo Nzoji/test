@@ -82,20 +82,22 @@ class Card1 extends StatelessWidget {
                   Text("\n Responde à razão pela qual se vai para o espaço, sendo assim engenheiros estabelecem, cronogramas muito precisos e operações estratégicas para que tudo seja um sucesso",
                          style: Theme.of(context).textTheme.body1,
                        ),
-                  Text("\nPrincipais elementos da missão\n",
+                  Text("\nPrincipais elementos da missão",
                          style: Theme.of(context).textTheme.body2,
                        ),
-
-                ],
+                  Text("\nOs principais elementos da missão são: o satélite, a órbita e a trajectória, o veículo de lançamento e o segmento terrestre.\n",
+                         style: Theme.of(context).textTheme.body1,
+                      ),
+                   ],
                 ),
               ),
-          ]
+            ]
           );
-    }
+        }
 
     buildCollapsed2() {
       return buildImg('assets/images/mission_elements.png', 300.0);
-    }
+      }
 
     buildCollapsed3() {
       return Container();
@@ -110,11 +112,11 @@ class Card1 extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Text("A missão consiste em três elementos principais que são: ",
+                  Text("A missão é definida por estes elementos:\n",
                          style: Theme.of(context).textTheme.body2,
                        ),
                   Text("O objetivo, os usuários e as operações",
-                         style: Theme.of(context).textTheme.caption,
+                         style: Theme.of(context).textTheme.body1,
                        ),
                 ],
                 ),
@@ -130,7 +132,7 @@ class Card1 extends StatelessWidget {
           Row(
             children: <Widget>[
               Expanded(
-                  child: buildImg('assets/images/objective_of_the_mission.jpg', 200.0)
+                  child: buildImg('assets/images/clean_space_view.jpg', 200.0)
                   ),
             ],
             ),
@@ -142,9 +144,9 @@ class Card1 extends StatelessWidget {
               Expanded(
                   child: buildImg('assets/images/operation_mission.png', 300.0)
                   ),
-            ],
+              ],
             ),
-        ],
+          ],
         );
     }
 

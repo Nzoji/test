@@ -19,7 +19,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  splashscreen:
+  pinch_zoom_image: "^0.2.5"
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -47,12 +47,18 @@ flutter:
 
   assets:
     - assets/images/angosat1.jpg
+    - assets/images/angosat2.png
+    - assets/images/angosat2_2.png
+    - assets/images/angosat1_team.jpg
     - assets/images/cansat_angolano.jpg
     - assets/images/cansat.png
+    - assets/images/clean_space_view.jpg
+    - assets/images/communication_satellite.jpg
     - assets/images/cubesat.jpg
     - assets/images/earth.jpg
+    - assets/images/gps.png
     - assets/images/hepta_sat.jpg
-    - assets/images/korolev.jpg
+    - assets/images/hubble.jpg
     - assets/images/lancamento_do_cansat.png
     - assets/images/map_track.jpg
     - assets/images/mapping.jpg
@@ -65,18 +71,16 @@ flutter:
     - assets/images/orbits_types.png
     - assets/images/orbits.jpg
     - assets/images/proton.jpg
+    - assets/images/remote_sensing.jpg
     - assets/images/sat.gif
     - assets/images/sat_geo.gif
     - assets/images/sat_air_control.gif
-    - assets/images/satellite.gif
     - assets/images/satellite_1.gif
-    - assets/images/satellite_urban_view.gif
     - assets/images/space_benefits.png
     - assets/images/satellite_1.gif
+    - assets/images/solar_energy.jpg
     - assets/images/space.gif
     - assets/images/space_benefits.png
-    - assets/images/solar_flare.jpg
-    - assets/images/sputnik.jpg
     - assets/images/stage1.jpg
     - assets/images/stage2.jpg
     - assets/images/stage3.jpg

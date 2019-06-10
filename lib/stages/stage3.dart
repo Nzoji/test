@@ -79,8 +79,9 @@ class Card1 extends StatelessWidget {
                   Text("O satélite\n",
                          style: Theme.of(context).textTheme.body2,
                        ),
-                  Text("O satélite está dividido em plataforma e carga útil. No módulo da carga útil são acoplados todos os subsistemas relacionados com a missão o satélite. Na plataforma do satélite temos os seguintes subsistemas: navegação, alimentação, térmico e propulsão.", style: Theme.of(context).textTheme.body1,
+                  Text("O satélite está dividido em módulo da plataforma e módulo da carga útil. No módulo da carga útil são acoplados todos os subsistemas relacionados com a missão o satélite.\nNa plataforma do satélite temos subsistemas responsáveis pelo fornecimento de atitude e controlo orbital, controlo térmico, controle da alimentação eléctrica, comandos e telemetria necessárias para atender a carga útil.\n", style: Theme.of(context).textTheme.body1,
                        ),
+                  Text("\nSatélite ANGOSAT e a equipa foto: RSC Energia", style: Theme.of(context).textTheme.caption,softWrap: true,),
                 ],
                 ),
               ),
@@ -89,7 +90,7 @@ class Card1 extends StatelessWidget {
     }
 
     buildCollapsed2() {
-      return buildImg('assets/images/space_benefits.png', 200.0);
+      return buildImg('assets/images/angosat1_team.jpg', 500.0);
     }
 
     buildCollapsed3() {
@@ -105,10 +106,10 @@ class Card1 extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Text("O primeiro satélite\n",
+                  Text("Configuração do satélite\n",
                          style: Theme.of(context).textTheme.body2,
                        ),
-                  Text("O primeiro satélite artificial foi lançado pela União Soviética em 4 de Outubro de 1957, e iniciando o programa soviético do Sputnik, com Sergei Korolev com designer chefe.", style: Theme.of(context).textTheme.body1,
+                  Text(" A fonte de alimentação principal do satélite provêm dos painéis solares, tendo também as baterias como fonte de alimentação secundária em fase de eclipse ou situação anômala (ONS) dos painéis solares.\n\nDurante o eclipse, duas baterias de longa duração são usadas, os painéis solares são dobrados durante a fase de lançamento.\nDepois do satélite estar em funcionamento na sua posição orbital, todos os painéis solares são expostos a luz do Sol e rodam acompanhando-o através do mecanismo de rotação dos painéis solares para alimentar os subsistemas.\n\n", style: Theme.of(context).textTheme.body1,
                        ),
                 ],
                 ),
@@ -124,11 +125,8 @@ class Card1 extends StatelessWidget {
           Row(
             children: <Widget>[
               Expanded(
-                  child: buildImg('assets/images/sputnik.jpg',200.0)
-                  ),
-              Expanded(
-                  child: buildImg('assets/images/korolev.jpg', 200.0)
-                  ),
+                  child: buildImg('assets/images/angosat2_2.png',500.0)
+                  )
             ],
             ),
         ],
@@ -141,7 +139,7 @@ class Card1 extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text("Imagem do primeiro satélite artificial e seu construtor  ", style: Theme.of(context).textTheme.caption,softWrap: true,),
+            Text("Imagem da configuração do satelite ANGOSAT-2", style: Theme.of(context).textTheme.caption,softWrap: true,),
           ],
           ),
         );
@@ -203,12 +201,12 @@ class Card2 extends StatelessWidget {
           child: Column(
             children: <Widget>[
               SizedBox(
-                height: 200.0,
+                height: 500.0,
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.blue,
                     shape: BoxShape.rectangle,
-                    image: DecorationImage(image: AssetImage('assets/images/angosat1.jpg'), fit: BoxFit.cover),
+                    image: DecorationImage(image: AssetImage('assets/images/angosat2.png'), fit: BoxFit.cover),
                     ),
                   ),
                 ),
@@ -255,14 +253,14 @@ class Card3 extends StatelessWidget {
           child: Column(
             children: <Widget>[
               SizedBox(
-                height: 200.0,
+                height: 500.0,
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.blue,
                     shape: BoxShape.rectangle,
                     image: DecorationImage(
                         image: AssetImage(
-                            'assets/images/angosat1.'
+                            'assets/images/gps.png'
                             ), fit: BoxFit.cover
                         ),
                     ),
@@ -318,14 +316,14 @@ class Card4 extends StatelessWidget {
           child: Column(
             children: <Widget>[
               SizedBox(
-                height: 200.0,
+                height: 500.0,
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.blue,
                     shape: BoxShape.rectangle,
                     image: DecorationImage(
                         image: AssetImage(
-                            'assets/images/mapping.jpg'
+                            'assets/images/remote_sensing.jpg'
                             ), fit: BoxFit.cover
                         ),
                     ),
@@ -381,14 +379,14 @@ class Card5 extends StatelessWidget {
           child: Column(
             children: <Widget>[
               SizedBox(
-                height: 200.0,
+                height: 500.0,
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.blue,
                     shape: BoxShape.rectangle,
                     image: DecorationImage(
                         image: AssetImage(
-                            'assets/images/solar_flare.jpg'
+                            'assets/images/hubble.jpg'
                             ), fit: BoxFit.cover
                         ),
                     ),

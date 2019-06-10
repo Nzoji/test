@@ -20,7 +20,7 @@ class Stage1 extends StatelessWidget {
             Card1(
             ),
             Card2(
-            )
+            ),
           ].map(
                   (w) {
                 return Padding(
@@ -37,8 +37,8 @@ class Stage1 extends StatelessWidget {
   }
 }
 
-const text1 = "A cultura espacial é todo o conhecimento adquirido sobre a exploração, uso, benefício, história, conhecimentos de interesse e importância sobre a área espacial.\n\nMuitos objectos que hoje são de uso corrente nasceram das necessidades do programa espacial. As rigorosas condições que enfrentam os exploradores espaciais impactam directa e indirectamente o nosso dia-a-dia, e exigem o desenvolvimento de equipamentos sofisticados e inovadores.\n\n";
-const text2 = "Para entendermos como se faz uma missão espacial, a importância e o impacto dessa exploração, temos que olhar para um número de vantagens, por vezes rentáveis que o espaço oferece. Estas vantagens são chamadas de imperativo do espaço e classificam-se em:\n\n• Perspectiva do globo terrestre\n\n Quanto mais alto da superfície terrestre o satélite estiver, maior será a visão aérea do território, permitindo a protecção das fronteiras, a agricultura de precisão, e a gestão dos recursos minerais.\n\n• Visão clara dos céus\n\n Permite uma melhor vista do espaço sem obstrução da atmosfera da terrestre.\n\n• Ambiente livre de queda\n\nDevido o ambiente de microgravidade, a estrutura do espaço é determinada pela gravidade que todos os corpos exercem uns sobre os outros. Na indústria espacial, o ambiente de microgravidade contribui no fabrico de materiais miniaturizados com mais facilidade usados em computadores e outros electrónicos. \n\n• Recursos\n\n Um dos recursos mais usados pela indústria espacial actualmente é a energia solar como fonte de alimentação principal dos satélites.";
+const text1 = "A cultura espacial é todo o conhecimento adquirido sobre a exploração, uso, benefício, história, conhecimentos de interesse e importância sobre a área espacial.\n\nDevido a guerra fria, muitos povos não viram interesse em dispender grandes somas na corrida ao espaço, no momento em que a economia mundial enfrentava tantos problemas. Contudo, a tecnologia que resultou daquela competição trouxe-nos imensos benefícios.";
+const text2 = "Devido a guerra fria, muitos povos não viram interesse em dispender grandes somas na corrida ao espaço, no momento em que a economia mundial enfrentava tantos problemas. Contudo, a tecnologia que resultou daquela competição trouxe-nos imensos benefícios. \n\nResultados directos dessa pesquisa virada para o espaço são por exemplo, os novos materiais, leves mas resistentes, e os métodos modernos de purificar a água; \na maioria das telecomunicações são feitas com satélites que orbitam a Terra; \nA navegação e a aviação usam satélites para se orientarem;\nOs antigos satélites militares são agora usados em sistemas de prevenção de objectos vindo do espaço, potencialmente perigosos para a Terra; \nAs previsões do estado do tempo são mais precisas através de satélites meteorológicos; \nE são também satélites que pesquisam as possíveis, riquezas mineralógicas e outros recursos do nosso planeta.";
 
 class Card1 extends StatelessWidget {
   @override
@@ -48,8 +48,8 @@ class Card1 extends StatelessWidget {
         child: ExpandableNotifier(
           child: Column(
             children: <Widget>[
-              const Text.rich(TextSpan(text:'\n\n“ Angola está na industria espacial para não sair mais.”',style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black)),style: TextStyle(fontSize: 15.0)),
-              const Text.rich(TextSpan(text:'“ José Carvalho da Rocha, Ministro das Telecomunicações e Tecnologias de Informação”\n\n')),
+              const Text.rich(TextSpan(text:'\n\n “ Angola está na industria espacial para não sair mais.”',style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black)),style: TextStyle(fontSize: 15.0)),
+              const Text.rich(TextSpan(text:' “ José Carvalho da Rocha, Ministro das Telecomunicações e Tecnologias de Informação”\n\n')),
 
               SizedBox(
                 height: 250.0,
@@ -129,12 +129,15 @@ class Card2 extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Text("“Até hoje, a exploração espacial continua a ser um dos principais motores de inovação tecnológica.\n” ",
-                         style: Theme.of(context).textTheme.body2,
+                  Text("Benefícios da exploração espacial.\n",
+                       style: Theme.of(context).textTheme.body2,
                        ),
-                  Text("Ilustração de algumas das aplicações do espaço na nossa vida nos selos de Angola.",
-                         style: Theme.of(context).textTheme.caption,
+                  Text("Resultados directos dessa pesquisa virada para o espaço são por exemplo:\n\n• Os novos materiais, leves mas resistentes, e os métodos modernos de purificar a água;\n\n• A maioria das telecomunicações são feitas com satélites que orbitam a Terra; \n\n• A navegação e a aviação usam satélites para se orientarem;\n\n• Os antigos satélites militares são agora usados em sistemas de prevenção de objectos vindo do espaço, potencialmente perigosos para a Terra;\n\n• As previsões do estado do tempo são mais precisas através de satélites meteorológicos; \n\n• E são também satélites que pesquisam as possíveis, riquezas mineralógicas e outros recursos do nosso planeta.\n\nEstes e muitos outros benefícios são tão importantes que a Assembleia Geral da ONU em 1999, criou a Semana Mundial do Espaço, um evento que acontece sempre entre 4 e 10 de Outubro, sendo uma celebração global anual das contribuições da ciência e da tecnologia espacial para a humanidade.",
+                         style: Theme.of(context).textTheme.body1,
                        ),
+                  Text("\n\nRepresentação do uso de satélites para orientação na navegação e na aviação. Imagem: ESA. ",style: Theme.of(context).textTheme.caption,
+                       ),
+
                 ],
                 ),
               ),
@@ -143,7 +146,7 @@ class Card2 extends StatelessWidget {
     }
 
     buildCollapsed2() {
-      return buildImg('assets/images/mission_types_stamp.png', 650.0);
+      return buildImg('assets/images/sat_air_control.gif', 350.0);
     }
 
     buildCollapsed3() {
@@ -159,8 +162,8 @@ class Card2 extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Text("A tecnologia espacial se reflecte no nosso dia-a-dia através dos seguintes meios: \n\n",
-                         style: Theme.of(context).textTheme.body1,
+                  Text("Imperativos do Espaço.\n",
+                         style: Theme.of(context).textTheme.body2,
                        ),
                 ],
                 ),
@@ -176,11 +179,15 @@ class Card2 extends StatelessWidget {
           Row(
             children: <Widget>[
               Expanded(
-                  child: buildImg('assets/images/sat_air_control.gif', 200.0)
+                  child: buildImg('assets/images/solar_energy.jpg', 300.0)
                   ),
-            ],
+              Expanded(
+                  child: buildImg('assets/images/clean_space_view.jpg', 300.0)
+                  ),
+              ],
+
             ),
-        ],
+          ],
         );
     }
 
@@ -190,7 +197,7 @@ class Card2 extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text("• Telemóveis que precisam dos satélites;\n\n• Melhores previsões meteorológicas após imagens de satélite;\n\n• GPS – Sistema de Posicionamento Global;\n\n• Satélites permitem uma melhor gestão dos recursos naturais;\n\n• Tecnologia de imagem utilizada por satélites para monitorizar sistemas na Terra, agora também  utilizada em hospitais nas máquinas de ressônancia magnética para detectar doenças; \n\n• Melhorias em aplicações utilizadas em casa como termómetros de infravermelhos;\n\n• Melhorias no isolamento térmico tendo aplicabilidade nas fardas dos bombeiros; \n\n• Desenvolvimento da fotografia digital;\n\n• Desenvolvimento de técnicas de controlo de tráfego aéreo;  \n\n• Mecanismos utilizados para fazer crescer plantas no espaço são hoje utilizados para combater o cancro, diminuir dores crónicas (como artrite e espasmos musculares), e aumentar a circulação sanguínea; \n\n• Ajuda nas operações de socorro, busca, e resgate, após desastres naturais; \n\n• Sistemas de tratamento e purificação de água mais eficientes.", softWrap: true,),
+            Text("Para entendermos como se faz uma missão espacial, a importância e o impacto dessa exploração, temos que olhar para um número de vantagens, por vezes rentáveis que o espaço oferece. Estas vantagens são chamadas de imperativo do espaço e classificam-se em:\n\n• Perspectiva do globo terrestre\n\n Quanto mais alto da superfície terrestre o satélite estiver, maior será a visão aérea do território, permitindo a protecção das fronteiras, a agricultura de precisão, e a gestão dos recursos minerais.\n\n• Visão clara dos céus\n\n Permite uma melhor vista do espaço sem obstrução da atmosfera da terrestre.\n\n• Ambiente livre de queda\n\nNa indústria espacial, o ambiente de microgravidade contribui no fabrico de materiais miniaturizados com mais facilidade usados em computadores e outros electrónicos. \n\n• Recursos\n\n Um dos recursos mais usados pela indústria espacial actualmente é a energia solar como fonte de alimentação principal dos satélites.", softWrap: true,),
           ],
           ),
         );
