@@ -104,10 +104,10 @@ List<Question> quizStage2 = [
       1, StageType.STAGE2
       ),
   /*4.*/Question(
-      "Que nome se dá trajectória fixa que o satélite descreve no espaço?",
-      [Answer("Geostacionária ", false),
-        Answer("Órbita", true),
-        Answer("Trajectória", false)
+      'Qual destas é o acrónimo da órbita geostácionária?',
+      [Answer("GEO", true),
+        Answer("LEO", false),
+        Answer("MEO", false)
       ],
       1, StageType.STAGE2
       ),
@@ -119,46 +119,7 @@ List<Question> quizStage2 = [
       ],
       1, StageType.STAGE2
       ),
-  /*6.*/Question(
-      'Qual destas não pertence as equipas que compõem o Centro de Controle e Missão de Satélite do projecto ANGOSAT?',
-      [Answer("Equipa de Construção", true),
-        Answer("Equipa de Planeamento de vôo", false),
-        Answer("Equipa do Canal de Serviço", false)
-      ],
-      1, StageType.STAGE2
-      ),
-  /*7.*/Question(
-      'O objectivo, os usuários e as operações são: ',
-      [Answer("Elementos de uma missão", false),
-        Answer("Elementos que definem uma missão", true),
-        Answer("Todos mencionados", false)
-      ],
-      1, StageType.STAGE2
-      ),
-  /*8.*/Question(
-      'Qual destes é um dos benefício mais importantes da exploração espacial?',
-      [Answer("Os planetas", false),
-        Answer("Desenvolvimento de tecnologia de satélites", true),
-        Answer("Todos mencionados", false)
-      ],
-      1, StageType.STAGE2
-      ),
-  /*9.*/Question(
-      'Qual destas é o acrónimo da órbita geostácionária?',
-      [Answer("GEO", true),
-        Answer("LEO", false),
-        Answer("MEO", false)
-      ],
-      1, StageType.STAGE2
-      ),
-  /*10.*/Question(
-      'Complete a frase: A altitude da órbita define...',
-      [Answer("O tamanho da cobertuura do satélite", false),
-        Answer("A trajectória do satélite", false),
-        Answer("O tamanho do satélite", true)
-      ],
-      1, StageType.STAGE2
-      ),
+
 ];
 //-------------------------------------------------------------------------------------THIRD QUIZ-------------------------------------------------------------------------------------------------------------------
 List<Question> quizStage3 = [
@@ -166,7 +127,7 @@ List<Question> quizStage3 = [
       'Quais são os tipos de satélites existentes?',
       [Answer("Satélites Naturais", false),
         Answer("Satélites Artificiais", false),
-        Answer("Os dois mencionados", true)
+        Answer("Todos mencionados", true)
       ],
       1, StageType.STAGE1
       ),
