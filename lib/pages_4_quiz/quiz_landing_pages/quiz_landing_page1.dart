@@ -18,7 +18,7 @@ class _QuizLandingPage1 extends State<QuizLandingPage1> {
           new Container(
             width: double.infinity,
             height: double.infinity,
-            child: new Image.asset('assets/images/space.gif', fit: BoxFit.fill),
+            child: new Image.asset('assets/images/stage_quiz_entry.jpg', fit: BoxFit.fill),
             ),
           new Align(
             alignment: Alignment.bottomCenter,

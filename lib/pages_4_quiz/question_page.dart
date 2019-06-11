@@ -43,7 +43,7 @@ class _QuestionPageState extends State<QuestionPage> with TickerProviderStateMix
     backgroundImageWidget = Container(
       width: double.infinity,
       height: double.infinity,
-      // child: new Image.asset('assets/images/question_page_image.jpeg', fit: BoxFit.fill),
+      child: new Image.asset('assets/images/question_page_image.jpeg', fit: BoxFit.fill),
       );
     rightAnswer(true);
   }

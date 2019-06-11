@@ -118,7 +118,7 @@ class Card1 extends StatelessWidget {
           Row(
             children: <Widget>[
               Expanded(
-                  child: buildImg('assets/images/lancamento_do_cansat.png', 200.0)
+                  child: buildImg('assets/images/lancamento_do_cansat.png', 550.0)
                   ),
 
             ],

@@ -305,7 +305,7 @@ class Card3 extends StatelessWidget {
     }
 
     buildCollapsed2() {
-      return buildImg('assets/images/orbits.jpg', 200.0);
+      return buildImg('assets/images/sat_geo.gif', 350.0);
     }
 
     buildCollapsed3() {
