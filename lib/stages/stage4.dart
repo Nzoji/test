@@ -43,7 +43,7 @@ class Stage4 extends StatelessWidget {
 
 const text1 = "O primeiro CANSAT tipicamente angolano, foi criado no âmbito das diferentes sinergias tendo como base de suporte o binómio Gabinete de Gestão do programa Espacial Nacional (GGEPEN) e a academia Nacional. O CANSAT Angolano, é um pico satélite contruído  para propósitos educativos, mediante o qual é possível adquirir experiência em “Montagem, Integração e Testes” munindo o leitor de conhecimentos sobre as funções, arquitectura e integração de cada subsistema que compõe um satélite.";
 const text2 = "O HETPA-sat é uma ferramenta de treinamento desenvolvida pelo Prof. Yamazaki, da Universidade Nihon, no Japão, para estudos práticos de engenharia de satélites. Ao fazer um curso com este kit, os alunos podem aprender os subsistemas básicos de satélite, incluindo estrutura, fornecimento de energia elétrica, comando e manipulação de dados, comunicação, estação terrestre e sensores, além de aprender como integrar esses subsistemas para criar um satélite em funcionamento. um todo.";
-const text3 = "Um CubeSat é um satélite miniatura em forma de quadrado (10 cm x 10 cm x 10 cm - aproximadamente o tamanho de um cubo de Rubik), pesando cerca de 1 kg. Um CubeSat pode ser usado sozinho (1 unidade) ou em grupos de múltiplas unidades (máximo de 24 unidades).";
+const text3 = "Um CubeSat é um satélite miniatura em forma de quadrado (10 cm x 10 cm x 10 cm - aproximadamente o tamanho de um cubo de Rubik), pesando cerca de 1 kg. Um CubeSat pode ser usado sozinho (1 unidade) ou em grupos de múltiplas unidades (máximo de 24 unidades).\n";
 
 
 class Card1 extends StatelessWidget {

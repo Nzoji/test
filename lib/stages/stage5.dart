@@ -23,6 +23,8 @@ class Stage5 extends StatelessWidget {
             ),
             Card3(
             ),
+            Card4(
+            )
           ].map(
                   (w) {
                 return Padding(
@@ -39,12 +41,66 @@ class Stage5 extends StatelessWidget {
   }
 }
 
-const text1 ="O ANGOSAT é um projecto de iniciativa presidencial, resultado de um profundo estudo, feito pela Comissão Interministerial de Coordenação Geral do Projecto de Telecomunicações via Satélite de Apoio Multissectorial (CISAT), sobre a viabilidade da construção, lançamento e operação de um satélite angolano. O estudo, contou com o Consórcio russo, liderado pela empresa ROSOBONEXPORT, RSC Energia (construtora do satélite).";
-const text2 ="No ano de 2009, firmou-se o Contrato entre o Governo da República de Angola, representado pelo Ministério das Telecomunicações e das Tecnologias de Informação (MTTI) e a Federação da Rússia, para a Construção, Lançamento e Operação do satélite Angosat-1.";
-const text3 = "O Gabinete de Gestão do Programa Espacial Nacional (GGPEN)é o órgão de execução da do Ministério das Telecomunicação, ao qual compete a criação, gestão e manutenção da instituição que integra o Programa Nacional Espacial, bem como, a existência de condições de acompanhamento da produção, lançamento e operacionalização em órbita do satélite angolano ANGOSAT.";
-const text4 = "A zona identificada para a construção do Centro de Controlo e Missão de Satélite (MCC), no município de Cacuaco, comuna da Funda no dia 27 de Junho de 2015. A característica argilosa do solo na zona de construção, exigiu o recurso de soluções de engenharia para que se procedesse a substituição do mesmo, de modos a garantir a sustentabilidade da fundação do edifício.";
+const text0 ="O ANGOSAT é um projecto de iniciativa presidencial, resultado de um profundo estudo, feito pela Comissão Interministerial de Coordenação Geral do Projecto de Telecomunicações via Satélite de Apoio Multissectorial (CISAT), sobre a viabilidade da construção, lançamento e operação de um satélite angolano. O estudo, contou com o Consórcio russo, liderado pela empresa ROSOBONEXPORT, RSC Energia (construtora do satélite).";
+const text1 ="No ano de 2009, firmou-se o Contrato entre o Governo da República de Angola, representado pelo Ministério das Telecomunicações e das Tecnologias de Informação (MTTI) e a Federação da Rússia, para a Construção, Lançamento e Operação do satélite Angosat-1.";
+const text2 = "O Gabinete de Gestão do Programa Espacial Nacional (GGPEN)é o órgão de execução da do Ministério das Telecomunicação, ao qual compete a criação, gestão e manutenção da instituição que integra o Programa Nacional Espacial, bem como, a existência de condições de acompanhamento da produção, lançamento e operacionalização em órbita do satélite angolano ANGOSAT.";
+const text3 = "A zona identificada para a construção do Centro de Controlo e Missão de Satélite (MCC), no município de Cacuaco, comuna da Funda no dia 27 de Junho de 2015. A característica argilosa do solo na zona de construção, exigiu o recurso de soluções de engenharia para que se procedesse a substituição do mesmo, de modos a garantir a sustentabilidade da fundação do edifício.";
+
 
 class Card1 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+        clipBehavior: Clip.antiAlias,
+        child: ExpandableNotifier(
+          child: Column(
+            children: <Widget>[
+              const Text.rich(TextSpan(text:'Projecto ANGOSAT\n\n')),
+              const Text.rich(TextSpan(text:'"O ANGOSAT é um projecto de iniciativa presidencial, resultado de um profundo estudo, feito pela Comissão Interministerial de Coordenação Geral do Projecto de Telecomunicações via Satélite de Apoio Multissectorial (CISAT), sobre a viabilidade da construção, lançamento e operação de um satélite angolano. O estudo, contou com o Consórcio russo, liderado pela empresa ROSOBONEXPORT, RSC Energia (construtora do satélite).')),
+              SizedBox(
+                height: 250.0,
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                    shape: BoxShape.rectangle,
+                    image: DecorationImage(image: AssetImage('assets/images/projecto_angosat.jpg'), fit: BoxFit.cover),
+                    ),
+                  ),
+                ),
+              ExpandablePanel(
+                tapHeaderToExpand: true,
+                header: Padding(
+                    padding: EdgeInsets.only(
+                        top: 10.0, left: 10
+                        ),
+                    child: Text("Integração do satélite com o lançador. Imagem Energia RKK", style: Theme.of(context).textTheme.body2)
+                    ),
+                collapsed: Text(
+                  text1, softWrap: false, overflow: TextOverflow.ellipsis,
+                  ),
+                expanded: Text(
+                  text1, softWrap: true, overflow: TextOverflow.fade,
+                  ),
+                builder: (_, collapsed, expanded) {
+                  return Padding(
+                    padding: EdgeInsets.only(
+                        left: 10.0, right: 10.0, bottom: 10.0
+                        ),
+                    child: Expandable(
+                      collapsed: collapsed,
+                      expanded: expanded,
+                      ),
+                    );
+                },
+                ),
+            ],
+            ),
+          )
+        );
+  }
+
+}
+class Card2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
@@ -180,7 +236,7 @@ class Card1 extends StatelessWidget {
         );
   }
 }
-class Card2 extends StatelessWidget {
+class Card3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -239,7 +295,7 @@ class Card2 extends StatelessWidget {
   }
 
 }
-class Card3 extends StatelessWidget {
+class Card4 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {

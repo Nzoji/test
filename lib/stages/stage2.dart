@@ -132,7 +132,7 @@ class Card1 extends StatelessWidget {
           Row(
             children: <Widget>[
               Expanded(
-                  child: buildImg('assets/images/clean_space_view.jpg', 200.0)
+                  child: buildImg('assets/images/objective_of_the_mission.jpg', 200.0)
                   ),
             ],
             ),

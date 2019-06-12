@@ -85,7 +85,7 @@ class _QuestionPageState extends State<QuestionPage> with TickerProviderStateMix
             backgroundImageWidget,
             new Padding(
               padding: const EdgeInsets.only(top: 50.0, left: 50.0),
-              child: Text('Pontuação:', style: TextStyle(color: Colors.black, fontSize: 16.0, fontWeight: FontWeight.w600)), // texto da pontuação
+              child: Text('Pontuação:', style: TextStyle(color: Colors.white, fontSize: 16.0, fontWeight: FontWeight.w600)),
               ),
             new Align(
               alignment: Alignment.topLeft,
@@ -97,16 +97,16 @@ class _QuestionPageState extends State<QuestionPage> with TickerProviderStateMix
                   alignment: Alignment.center,
                   margin: EdgeInsets.only(top: 45.0, left: 150.0),
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15.0),// botao dos pontos
-                      color: Colors.yellow
+                      borderRadius: BorderRadius.circular(15.0),
+                      color: Colors.blue[800]
                       ),
-                  child: new Text('$scoreCounter', textDirection: TextDirection.ltr, style: const TextStyle(color: Colors.black, fontSize: 13.0)),// textoda pontua
+                  child: new Text('$scoreCounter', textDirection: TextDirection.ltr, style: const TextStyle(color: Colors.white, fontSize: 13.0)),// textoda pontua
                   ),
                 ),
               ),
             new Padding(
               padding: const EdgeInsets.only(top: 150.0, right: 20.0, left: 20.0),
-              child: Text(question.question, style: TextStyle(color: Colors.black, fontSize: 15.0, fontWeight: FontWeight.w600), textAlign: TextAlign.center),
+              child: Text(question.question, style: TextStyle(color: Colors.blue, fontSize: 15.0, fontWeight: FontWeight.w600), textAlign: TextAlign.left),
               ),
             new Container(
               padding: const EdgeInsets.only(left: 20.0, right: 20.0, top: 250.0),
@@ -138,10 +138,10 @@ class _QuestionPageState extends State<QuestionPage> with TickerProviderStateMix
             child: new Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                Text('A SUA PONTUAÇÃO É: ', style: TextStyle(color: Colors.black, fontSize: 15.0, fontWeight: FontWeight.w600), textAlign: TextAlign.center),
-                Text('$scoreCounter', style: TextStyle(color: Colors.black, fontSize: 50.0, fontWeight: FontWeight.w600), textAlign: TextAlign.center),
-                // Text('Resposta errada!', style: TextStyle(color: Colors.black, fontSize: 17.0, fontWeight: FontWeight.w600), textAlign: TextAlign.center),
-                Text('\"frase memorável \". autor', style: TextStyle(color: Colors.black, fontSize: 20.0, fontWeight: FontWeight.w600), textAlign: TextAlign.center),
+                Text('A SUA PONTUAÇÃO É: ', style: TextStyle(color: Colors.white, fontSize: 15.0, fontWeight: FontWeight.w600), textAlign: TextAlign.center),
+                Text('$scoreCounter', style: TextStyle(color: Colors.white, fontSize: 50.0, fontWeight: FontWeight.w600), textAlign: TextAlign.center),
+                Text('Parabéns! Acertou.', style: TextStyle(color: Colors.white, fontSize: 17.0, fontWeight: FontWeight.w600), textAlign: TextAlign.center),
+                Text('\"Não existe tal coisa como problema sem solução\". Sergei Korolev', style: TextStyle(color: Colors.white, fontSize: 20.0, fontWeight: FontWeight.w600), textAlign: TextAlign.center),
                 //Text('Infelizmente Perdeu!', style: TextStyle(color: Colors.black, fontSize: 17.0, fontWeight: FontWeight.w600), textAlign: TextAlign.center),
               ],
               ),
@@ -166,10 +166,10 @@ class _QuestionPageState extends State<QuestionPage> with TickerProviderStateMix
             child: new Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                Text('Pontuação', style: TextStyle(color: Colors.black, fontSize: 15.0, fontWeight: FontWeight.w600), textAlign: TextAlign.center),
-                Text('Parabéns! Acertou.', style: TextStyle(color: Colors.black, fontSize: 17.0, fontWeight: FontWeight.w600), textAlign: TextAlign.center),
-                Text('$scoreCounter', style: TextStyle(color: Colors.black, fontSize: 50.0, fontWeight: FontWeight.w600), textAlign: TextAlign.center),
-                Text('\"Não existe tal coisa como problema sem solução\". Sergei Korolev', style: TextStyle(color: Colors.black, fontSize: 20.0, fontWeight: FontWeight.w600), textAlign: TextAlign.center),
+                Text('A SUA PONTUAÇÃO É: ', style: TextStyle(color: Colors.white, fontSize: 15.0, fontWeight: FontWeight.w600), textAlign: TextAlign.center),
+                Text('$scoreCounter', style: TextStyle(color: Colors.white, fontSize: 50.0, fontWeight: FontWeight.w600), textAlign: TextAlign.center),
+                Text('Parabéns! Acertou.', style: TextStyle(color: Colors.white, fontSize: 17.0, fontWeight: FontWeight.w600), textAlign: TextAlign.center),
+                Text('\"Não existe tal coisa como problema sem solução\". Sergei Korolev', style: TextStyle(color: Colors.white, fontSize: 20.0, fontWeight: FontWeight.w600), textAlign: TextAlign.center),
               ],
               ),
             ),
@@ -177,11 +177,6 @@ class _QuestionPageState extends State<QuestionPage> with TickerProviderStateMix
             alignment: Alignment.bottomCenter,
             child: new Container(
               margin: const EdgeInsets.only(bottom: 100.0),
-              child: BorderButton(
-                'VOLTAR', 50.0, (){
-                Navigator.pop(context);
-              }, width: 150.0,
-                ),
               ),
             ),
         ],

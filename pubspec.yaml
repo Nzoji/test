@@ -69,7 +69,7 @@ flutter:
     - assets/images/objective_of_the_mission.jpg
     - assets/images/operation_mission.png
     - assets/images/orbits_types.png
-    - assets/images/orbits.jpg
+    - assets/images/projecto_angosat.jpg
     - assets/images/proton.jpg
     - assets/images/question_page_image.jpeg
     - assets/images/remote_sensing.jpg
@@ -80,7 +80,6 @@ flutter:
     - assets/images/space_benefits.png
     - assets/images/satellite_1.gif
     - assets/images/solar_energy.jpg
-    - assets/images/space.gif
     - assets/images/space_benefits.png
     - assets/images/stage1.jpg
     - assets/images/stage2.jpg
