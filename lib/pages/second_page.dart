@@ -183,10 +183,10 @@ class Second extends StatelessWidget {
                           child: const  Text('LER'),
                           onPressed: () { Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new Stage5()));},
                           ),
-                        new FlatButton(
+                        /*new FlatButton(
                           child: const  Text('TESTE O QUE APRENDEU'),
                           onPressed: () {  Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new QuizLandingPage5()));},
-                          ),
+                          ),*/
                       ],
                       ),
                     ),

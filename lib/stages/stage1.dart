@@ -38,19 +38,18 @@ class Stage1 extends StatelessWidget {
 }
 
 const text1 = "A cultura espacial é todo o conhecimento adquirido sobre a exploração, uso, benefício, história, conhecimentos de interesse e importância sobre a área espacial.\n\nDevido a guerra fria, muitos povos não viram interesse em dispender grandes somas na corrida ao espaço, no momento em que a economia mundial enfrentava tantos problemas. Contudo, a tecnologia que resultou daquela competição trouxe-nos imensos benefícios.";
-const text2 = "Devido a guerra fria, muitos povos não viram interesse em dispender grandes somas na corrida ao espaço, no momento em que a economia mundial enfrentava tantos problemas. Contudo, a tecnologia que resultou daquela competição trouxe-nos imensos benefícios. \n\nResultados directos dessa pesquisa virada para o espaço são por exemplo, os novos materiais, leves mas resistentes, e os métodos modernos de purificar a água; \na maioria das telecomunicações são feitas com satélites que orbitam a Terra; \nA navegação e a aviação usam satélites para se orientarem;\nOs antigos satélites militares são agora usados em sistemas de prevenção de objectos vindo do espaço, potencialmente perigosos para a Terra; \nAs previsões do estado do tempo são mais precisas através de satélites meteorológicos; \nE são também satélites que pesquisam as possíveis, riquezas mineralógicas e outros recursos do nosso planeta.";
 
 class Card1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+        color: Color(0xFFE3F2FD),
         clipBehavior: Clip.antiAlias,
         child: ExpandableNotifier(
           child: Column(
             children: <Widget>[
               const Text.rich(TextSpan(text:'\n\n “ Angola está na industria espacial para não sair mais.”',style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black)),style: TextStyle(fontSize: 15.0)),
               const Text.rich(TextSpan(text:' “ José Carvalho da Rocha, Ministro das Telecomunicações e Tecnologias de Informação”\n\n')),
-
               SizedBox(
                 height: 250.0,
                 child: Container(
@@ -132,7 +131,7 @@ class Card2 extends StatelessWidget {
                   Text("Benefícios da exploração espacial.\n",
                        style: Theme.of(context).textTheme.body2,
                        ),
-                  Text("Resultados directos dessa pesquisa virada para o espaço são por exemplo:\n\n• Os novos materiais, leves mas resistentes, e os métodos modernos de purificar a água;\n\n• A maioria das telecomunicações são feitas com satélites que orbitam a Terra; \n\n• A navegação e a aviação usam satélites para se orientarem;\n\n• Os antigos satélites militares são agora usados em sistemas de prevenção de objectos vindo do espaço, potencialmente perigosos para a Terra;\n\n• As previsões do estado do tempo são mais precisas através de satélites meteorológicos; \n\n• E são também satélites que pesquisam as possíveis, riquezas mineralógicas e outros recursos do nosso planeta.\n\nEstes e muitos outros benefícios são tão importantes que a Assembleia Geral da ONU em 1999, criou a Semana Mundial do Espaço, um evento que acontece sempre entre 4 e 10 de Outubro, sendo uma celebração global anual das contribuições da ciência e da tecnologia espacial para a humanidade.",
+                  Text("Resultados directos dessa pesquisa virada para o espaço são por exemplo:\n\n• Os novos materiais, leves mas resistentes, isolamento térmico na farda dos bombeiros e os métodos modernos de purificar a água;\n\n• A maioria das telecomunicações são feitas com satélites que orbitam a Terra; \n\n• A navegação e a aviação usam satélites para se orientarem;\n\n• Os antigos satélites militares são agora usados em sistemas de prevenção de objectos vindo do espaço, potencialmente perigosos para a Terra;\n\n• As previsões do estado do tempo são mais precisas através de satélites meteorológicos; \n\n• E são também satélites que pesquisam as possíveis, riquezas mineralógicas e outros recursos do nosso planeta.\n\nEstes e muitos outros benefícios são tão importantes que a Assembleia Geral da ONU em 1999, criou a Semana Mundial do Espaço, um evento que acontece sempre entre 4 e 10 de Outubro, sendo uma celebração global anual das contribuições da ciência e da tecnologia espacial para a humanidade.",
                          style: Theme.of(context).textTheme.body1,
                        ),
                   Text("\n\nRepresentação do uso de satélites para orientação na navegação e na aviação. Imagem: ESA. ",style: Theme.of(context).textTheme.caption,

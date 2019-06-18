@@ -330,7 +330,7 @@ class Card3 extends StatelessWidget {
                   Text("\nExistem vários tipos de órbitas que são: ",
                          style: Theme.of(context).textTheme.body2,
                        ),
-                  Text("\n\n• Órbita Geostacionária (GEO). \n\n• Órbita de transferência geoestacionária (GTO).\n\n• Órbita baixa. (LEO)\n\n• Órbita média  baixa.(MEO)\n\n• Órbita polares. \n\n• Órbitas síncronas do Sol. \n\n• Órbitas altamente elíptica (HEO).",
+                  Text("\n\n• Órbita Geostacionária (GEO). \n\n• Órbita de transferência geoestacionária (GTO).\n\n• Órbita baixa. (LEO)\n\n• Órbita média da Terra.(MEO)\n\n• Órbita polares. \n\n• Órbitas síncronas do Sol (SSO). \n\n• Órbitas altamente elíptica (HEO).",
                          style: Theme.of(context).textTheme.body1,
                        ),
                 ],

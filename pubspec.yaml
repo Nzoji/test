@@ -19,6 +19,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  zoomable_image: any
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -56,12 +57,15 @@ flutter:
     - assets/images/communication_satellite.jpg
     - assets/images/cubesat.jpg
     - assets/images/earth.jpg
+    - assets/images/ggpen.jpg
     - assets/images/gps.png
     - assets/images/hepta_sat.jpg
     - assets/images/hubble.jpg
     - assets/images/lancamento_do_cansat.png
-    - assets/images/map_track.jpg
-    - assets/images/mapping.jpg
+    - assets/images/mcc.jpg
+    - assets/images/mcc1.jpg
+    - assets/images/mcc2.jpg
+    - assets/images/mcc3.jpg
     - assets/images/mcc_antennas.jpg
     - assets/images/mission_elements.png
     - assets/images/mission_types_stamp.png
@@ -69,6 +73,9 @@ flutter:
     - assets/images/objective_of_the_mission.jpg
     - assets/images/operation_mission.png
     - assets/images/orbits_types.png
+    - assets/images/plano_estrategico_do_ggpen.png
+    - assets/images/plano_estrategico_do_ggpen2.png
+    - assets/images/primeira_pedra.jpg
     - assets/images/projecto_angosat.jpg
     - assets/images/proton.jpg
     - assets/images/question_page_image.jpeg
