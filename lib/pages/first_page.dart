@@ -1,4 +1,3 @@
-import 'package:angosat_educa2/data/expandable.dart';
 import 'package:flutter/material.dart';
 
 
@@ -13,7 +12,7 @@ class First extends StatelessWidget {
           new Container(
             width: double.infinity,
             height: double.infinity,
-            child: new Image.asset('assets/images/sat.gif', fit: BoxFit.fill),
+            child: new Image.asset('assets/images/intro.gif', fit: BoxFit.fill),
             ),
           new Align(
             alignment: Alignment.bottomCenter,

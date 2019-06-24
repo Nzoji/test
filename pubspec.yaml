@@ -80,7 +80,7 @@ flutter:
     - assets/images/proton.jpg
     - assets/images/question_page_image.jpeg
     - assets/images/remote_sensing.jpg
-    - assets/images/sat.gif
+    - assets/images/intro.gif
     - assets/images/sat_geo.gif
     - assets/images/sat_air_control.gif
     - assets/images/satellite_1.gif

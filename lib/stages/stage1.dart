@@ -43,7 +43,6 @@ class Card1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-        color: Color(0xFFE3F2FD),
         clipBehavior: Clip.antiAlias,
         child: ExpandableNotifier(
           child: Column(
