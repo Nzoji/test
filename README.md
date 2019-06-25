@@ -1,6 +1,6 @@
-# angosat_educa2
+# Angosat Educa
 
-A new Flutter application.
+Aplicação de educação espacial.
 
 ## Getting Started
 
